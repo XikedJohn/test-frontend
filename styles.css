@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#canvas {
+    position: relative;
+}
+
+.canvasRow {
+    display: flex;
+}
+
+.canvasCell {
+    border: 1px solid #aaa;
+}
+
+#colorPicker {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 0 5px 1px #777;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+}
+
+.colorOption {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.colorOption.selected {
+    border-width: 2px;
+    border-color: #333
+}
+
+.colorOption:hover {
+    border-color: #333;
+}
